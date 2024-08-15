@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    width: 200px;
+    border-right: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+#projectList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-item {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.project-item.selected {
+    background-color: #e0e0e0;
+}
+
+.project-item button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+#todoSection {
+    flex: 1;
+    padding: 10px;
+}
+
+.todo-item {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.todo-item button {
+    margin-right: 5px;
+}
+
+.todo-item.high-priority {
+    border-color: red;
+}
+
+.todo-item.medium-priority {
+    border-color: orange;
+}
+
+.todo-item.low-priority {
+    border-color: green;
+}
+
+.todo-detail {
+    display: none;
+    margin-top: 10px;
+}
+
+.todo-detail.show {
+    display: block;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+}
